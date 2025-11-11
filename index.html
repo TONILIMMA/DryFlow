@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drywall Gestor Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#001F3F', // Imperative: Dark Blue
+                dark: '#1e3a8a',   // A slightly lighter dark blue for dark mode elements
+              },
+              secondary: '#6b21a8', // Imperative: Purple (Darker for AA contrast)
+              success: '#2E8B57',   // Imperative: Sea Green for 'New Client' button
+              accent: {
+                light: '#6b21a8', // Purple for highlights
+                dark: '#c084fc',   // Lighter purple for dark mode highlights
+              },
+              background: {
+                light: '#F0F0F0', // Imperative: Light Gray
+                dark: '#001F3F',  // Imperative: Dark Blue
+              },
+              surface: {
+                light: '#ffffff', // white
+                dark: '#0f172a',  // Dark Gray
+              },
+              text: {
+                primary: {
+                  light: '#111827', // Use Tailwind's gray-900 for max contrast
+                  dark: '#f8fafc',  // Use Tailwind's slate-50 for max contrast
+                },
+                secondary: {
+                  light: '#1f2937', // Use Tailwind's gray-800 for better contrast
+                  dark: '#94a3b8',  // Light gray text for dark mode
+                }
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
